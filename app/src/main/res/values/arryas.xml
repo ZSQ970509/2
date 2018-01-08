@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="number">
+        <item>TD-001</item>
+        <item>TD-002</item>
+        <item>TD-003</item>
+        <item>TD-004</item>
+    </string-array>
+    <string-array name="area">
+        <item>平台1</item>
+        <item>平台2</item>
+        <item>平台3</item>
+        <item>平台4</item>
+    </string-array>
+    <string-array name="state">
+        <item>开锁</item>
+        <item>关锁</item>
+    </string-array>
+    <declare-styleable name="ScrimInsetsView">
+        <attr name="appInsetForeground" format="reference|color" />
+    </declare-styleable>
+    <attr name="fits_windows" format="boolean" />
+    <attr name="clip_padding" format="boolean" />
+</resources>

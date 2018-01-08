@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/app_color"
+        android:textColor="#ffffff"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:text="输入开锁密码"/>
+
+    <EditText
+        android:id="@+id/input_pwd_dialog_et"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:textColorHint="@color/Ivory3"
+        android:inputType="textPassword"
+        android:textSize="14sp"
+        android:hint="请输入密码"/>
+
+    <Button
+        android:id="@+id/input_pwd_dialog_btn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/app_color"
+        android:textColor="#ffffff"
+        android:textSize="14sp"
+        android:text="确定"/>
+
+</LinearLayout>

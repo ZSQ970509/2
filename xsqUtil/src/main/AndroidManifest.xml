@@ -1,0 +1,40 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.xsq.common">
+
+    <!--<uses-permission android:name="android.permission.BLUETOOTH" />-->
+    <!--<uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />-->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <application>
+
+        <activity android:name=".app.customzx.CaptureExActivity"
+            android:clearTaskOnLaunch="true"
+            android:stateNotNeeded="true"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@style/CaptureTheme"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".app.customzx.PreferencesActivity"
+            android:label="@string/preferences_name"
+            android:stateNotNeeded="true">
+        </activity>
+    </application>
+
+</manifest>

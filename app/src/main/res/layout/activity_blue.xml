@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/app_color"
+            android:gravity="center"
+            android:text="蓝牙开锁"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/activity_blue_back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="12dp"
+            android:background="@drawable/back_left_1" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingTop="12dp"
+        android:layout_weight="0.7"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/activity_blue_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/black"
+            android:paddingLeft="12dp"
+            android:textSize="18sp"
+            android:text="当前状态 : 蓝牙未连接"/>
+        <TextView
+            android:id="@+id/activity_blue_number"
+            style="@style/textView1"
+            android:text="设备编号 : " />
+        <TextView
+            android:id="@+id/activity_blue_site"
+            style="@style/textView1"
+            android:text="工        地 : " />
+        <TextView
+            android:id="@+id/activity_blue_area"
+            style="@style/textView1"
+            android:text="作  业  区 : " />
+        <TextView
+            android:id="@+id/activity_blue_name"
+            style="@style/textView1"
+            android:text="操  作  员 : "
+            android:visibility="gone"/>
+        <TextView
+            style="@style/textView1"
+            android:text="工        种 : 塔吊"
+            android:visibility="gone"/>
+            <TextView
+                android:id="@+id/activity_blue_lock_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:text="关"
+                android:visibility="gone"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.3">
+
+        <TextView
+            android:id="@+id/activity_blue_open_btn"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/u11"
+            android:drawablePadding="4dp"
+            android:gravity="center"
+            android:text="开锁"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/activity_blue_off_btn"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/u12"
+            android:drawablePadding="4dp"
+            android:gravity="center"
+            android:text="关锁"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/activity_blue_request_btn"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/operation_btn_bg"
+            android:text="请求操作"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

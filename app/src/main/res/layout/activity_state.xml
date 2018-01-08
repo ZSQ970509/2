@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/Ivory2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/app_color">
+        <ImageView
+            android:id="@+id/activity_state_back_btn"
+            style="@style/title_img"/>
+        <TextView
+            style="@style/title_tv"
+            android:text="设备运行状态监控列表"/>
+    </RelativeLayout>
+    <android.support.v4.widget.SwipeRefreshLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/swipeLayout" >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:weightSum="3"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:background="@color/white"
+                android:visibility="gone"
+                android:orientation="horizontal">
+                <LinearLayout
+                    style="@style/request_linear">
+                    <Spinner
+                        android:id="@+id/activity_state_spinner_number"
+                        style="@style/spinner_style"
+                        android:layout_marginRight="12dp"
+                        android:entries="@array/number"></Spinner>
+                </LinearLayout>
+                <View
+                    style="@style/view_vertical" />
+                <LinearLayout
+                    style="@style/request_linear">
+                    <Spinner
+                        android:id="@+id/activity_state_spinner_area"
+                        style="@style/spinner_style"
+                        android:entries="@array/area"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"></Spinner>
+                </LinearLayout>
+                <View
+                    style="@style/view_vertical" />
+                <LinearLayout
+                    style="@style/request_linear">
+                    <Spinner
+                        android:id="@+id/activity_state_spinner_state"
+                        style="@style/spinner_style"
+                        android:entries="@array/state"
+                        android:layout_marginLeft="12dp"></Spinner>
+                </LinearLayout>
+            </LinearLayout>
+            <View
+                style="@style/view_horizontal_normal"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:weightSum="3"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:orientation="horizontal">
+                <View
+                    style="@style/view_vertical_normal" />
+                <TextView
+                    style="@style/request_tv"
+                    android:text="设备名称"/>
+                <View
+                    style="@style/view_vertical_normal" />
+                <TextView
+                    style="@style/request_tv"
+                    android:text="作业区"/>
+                <View
+                    style="@style/view_vertical_normal"
+                    android:visibility="gone"/>
+                <TextView
+                    style="@style/request_tv"
+                    android:text="操作员"
+                    android:visibility="gone"/>
+                <View
+                    style="@style/view_vertical_normal" />
+                <TextView
+                    style="@style/request_tv"
+                    android:text="设备状态"/>
+                <View
+                    style="@style/view_vertical_normal" />
+            </LinearLayout>
+            <View
+                style="@style/view_horizontal_normal"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"/>
+            <com.xsq.czy.util.MyListView
+                android:id="@+id/activity_state_myListview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:divider="@color/black"
+                android:dividerHeight="1dp"></com.xsq.czy.util.MyListView>
+        </LinearLayout>
+    </ScrollView>
+</android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

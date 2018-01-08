@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/app_color">
+        <ImageView
+            android:id="@+id/activity_test_back_btn"
+            style="@style/title_img"
+            android:visibility="gone"/>
+        <TextView
+            style="@style/title_tv"
+            android:text="操作员照片对比"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:padding="6dp"
+        android:text="采集图:"/>
+
+    <ImageView
+        android:id="@+id/activity_test_base_map"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:padding="6dp"
+        android:text="现场采集图片:"/>
+
+    <ImageView
+        android:id="@+id/activity_test_contrast_picture"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_gravity="center_horizontal"/>
+
+</LinearLayout>
