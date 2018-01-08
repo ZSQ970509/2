@@ -14,6 +14,7 @@ public class Constant extends Application {
     public static final String APP_PREFERENCES = "app_preferences";
     public static final String TEMP_PATH = "IconLoadDemo"; 	// SD卡中的临时文件夹路径
     private static SharedPreferences shared;
+
     private static Context mContext;
 
     public static Context getContext(){
