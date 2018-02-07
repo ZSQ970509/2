@@ -8,8 +8,8 @@ android {
         applicationId "com.xsq.czy"
         minSdkVersion 18
         targetSdkVersion 23
-        versionCode 9
-        versionName "1.1.171229"
+        versionCode 10
+        versionName "1.2.180205"
     }
     buildTypes {
         release {
